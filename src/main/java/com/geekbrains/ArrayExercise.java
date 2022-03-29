@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class App {
+public class ArrayExercise {
     public static void main(String[] args) {
         List<String> arrayOfWords = new ArrayList<>();
         arrayOfWords.add("Cat");
@@ -20,10 +20,10 @@ public class App {
         arrayOfWords.add("Ten");
         arrayOfWords.add("Home");
 
-        Map<String, Integer>  countOfWordsMap = new HashMap<>();
+        Map<String, Integer> countOfWordsMap = new HashMap<>();
 
         for (String arrayOfWord : arrayOfWords) {
-            countOfWordsMap.put(arrayOfWord, (countOfWordsMap.get(arrayOfWord)==null)?1:(countOfWordsMap.get(arrayOfWord)+1) );
+            countOfWordsMap.put(arrayOfWord, (countOfWordsMap.get(arrayOfWord) == null) ? 1 : (countOfWordsMap.get(arrayOfWord) + 1));
         }
 
         for (String s : countOfWordsMap.keySet()) {
